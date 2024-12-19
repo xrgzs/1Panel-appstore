@@ -1,0 +1,21 @@
+name: 飞牛私有云 fnOS
+tags:
+  - 实用工具
+  - 云存储
+title: 飞牛私有云 fnOS 的 Docker 移植测试
+description: 飞牛私有云 fnOS 的 Docker 移植测试
+additionalProperties:
+  key: fnos
+  name: 飞牛私有云 fnOS
+  tags:
+    - Storage
+    - Tool
+  shortDescZh: 飞牛私有云 fnOS 的 Docker 移植测试
+  shortDescEn: Run fnOS in Docker
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://hub.docker.com/r/makedie/fnos
+  github: https://github.com/GreenDamTan/DockerFile/tree/dev/fnOS
+  document: https://hub.docker.com/r/makedie/fnos

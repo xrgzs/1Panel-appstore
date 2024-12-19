@@ -1,0 +1,21 @@
+services:
+  fnos:
+    image: makedie/fnos:0.8.27-551_test
+    container_name: ${CONTAINER_NAME}
+    tty: true
+    ports:
+      - "${PANEL_APP_PORT_HTTP}:5666"
+      - "${PANEL_APP_PORT_HTTPS}:5667"
+      - "${PANEL_APP_PORT_CONNECT}:5432"
+      - "${PANEL_APP_PORT_HTTP_OLD}:8000"
+      - "${PANEL_APP_PORT_HTTPS_OLD}:8001"
+    tmpfs:
+      - /tmp
+      - /var/run
+      - /var/cache
+      - /run/lock
+    extra_hosts:
+      - "${CONTAINER_NAME}:127.0.0.1"
+    hostname: ${CONTAINER_NAME}
+    privileged: true
+    restart: always
